@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: capitalize;
+            transition: all .4s ease;
+        }
+
+        body {
+            scroll-behavior: smooth;
+    
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #242424;
+            color: #eee;
+            padding: 3px 24px;
+            box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, .2);
+        }
+
+        header a {
+            letter-spacing: 3px;
+            color: #eee;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        header a span {
+            font-size: 24px;
+            color: #e7e7e7;
+        }
+
+        button {
+            background: transparent;
+            border: 1px solid #eee;
+            color: #eee;
+            padding: 3px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            width: 150px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #eee;
+            color: #242424;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 12px;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: #242424;
+            border-radius: 6px;
+            color: #eee;
+            padding: 21px;
+            font-size: 18px;
+            position: relative;
+            max-width: 50%;
+            margin: 25% auto;
+            margin-bottom: 1%;
+            box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, .2);
+        }
+
+        .container h2 {
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .container h2 span {
+            font-size: 18px;
+        }
+
+        .content {
+            background-color: #242424;
+            border-radius: 6px;
+            color: #eee;
+            padding: 21px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            position: relative;
+            max-width: 50%;
+            margin: auto;
+            box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, .2);
+        }
+
+        .content h3 {
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 14px;
+            }
+            button {
+                display: none;
+            }
+            nav li {
+                display: none;
+            }
+            .container,.content {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">Status | <span>online</span></a>
+        <nav class="links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </nav>
+        <button>button</button>
+    </header>
+    <div class="container">
+        <h2>Ubuntu Server <span>Malava, KE</span></h2>
+    </div>
+
+    <div class="content">
+        <h3>
+            Code: 50103
+        </h3>
+    </div>
+</body>
+
+</html>
