@@ -1,2 +1,2 @@
-# Vanilla-Node-Server
+# Vanilla Node Server
 Vanilla Nodejs Server(Basic Routing...)
